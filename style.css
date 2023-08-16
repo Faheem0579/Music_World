@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Fasthand&family=Open+Sans:wght@500&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500&family=Fasthand&family=Open+Sans:wght@500&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Varela+Round&display=swap');
+
+
+body {
+    background-color: rgb(244, 239, 234);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 12px;
+}
+
+.brand img {
+    width: 38px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+    font-weight: bold;
+}
+
+.container {
+    min-height: 61vh;
+    background-color: black;
+    color: white;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 34px;
+    background-image: url('bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icons {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+.songItemContainer {
+    margin: 60px 0px;
+}
+
+.songItem {
+    height: 50%;
+    display: flex;
+    background-color: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.songItem img {
+    margin: 2px 12px;
+    height: 35px;
+    width: 39px;
+    border-radius: 20px;
+}
+
+.timeStamp {
+    margin: 0px 23px;
+    cursor: pointer;
+}
+
+.timeStamp i {
+    cursor: pointer;
+}
+
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    height: 24px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    margin-right: 12px;
+
+}
+
+
+/* Responsivity of website using media selector of maximum width 650px - 350px */
+
+
+
+@media only screen and (max-width: 650px) {
+
+    .container {
+        min-height: 61vh;
+        background-color: black;
+        color: white;
+        font-family: "Edu NSW ACT Foundation", cursive;
+        display: flex;
+        width: 70%;
+        margin: 21px auto;
+        border-radius: 15px;
+        padding: 25px;
+        background-image: url(bg2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 7px;
+    }
+
+    .songItemContainer {
+        margin: 60px 0px;
+    }
+
+    .songItem {
+        height: 30%;
+        display: flex;
+        background-color: white;
+        color: black;
+        margin: 12px 0px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        font-size: 10px;
+    }
+
+    .songItem img {
+        margin: 2px 12px;
+        height: 35px;
+        width: 39px;
+        border-radius: 20px;
+    }
+
+    .timeStamp {
+        margin: 0px 23px;
+        cursor: pointer;
+    }
+
+    .timeStamp i {
+        cursor: pointer;
+    }
+
+
+
+    .bottom {
+        position: sticky;
+        height: 100px;
+        background-color: black;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .icons {
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .songInfo {
+        position: absolute;
+        left: 25vw;
+        display: flex;
+        height: 24px;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        margin-bottom: 13px;
+
+    }
+
+    .songInfo img {
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+        margin-right: 12px;
+
+    }
+}
+
+
+
+
+/* Responsivity of website using media selector of maximum width 350px */
+
+
+
+
+@media only screen and (max-width: 350px) {
+
+    .songItemContainer {
+        margin: 60px 0px;
+    }
+
+    .songItem {
+        height: 30%;
+        display: flex;
+        background-color: white;
+        color: black;
+        margin: 12px 0px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        font-size: 8px;
+    }
+
+    .songItem img {
+        margin: 2px 12px;
+        height: 27px;
+        width: 29px;
+        border-radius: 20px;
+    }
+    
+
+    .timeStamp {
+        margin: 0px 16px;
+        cursor: pointer;
+    }
+
+    .timeStamp i {
+        cursor: pointer;
+    }
+
+
+
+    .bottom {
+        position: sticky;
+        height: 75px;
+        background-color: black;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .icons {
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .songInfo {
+        position: absolute;
+        left: 25vw;
+        display: flex;
+        height: 24px;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        margin-bottom: 13px;
+        font-size: 12px;
+
+    }
+
+    .songInfo img {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+        margin-right: 12px;
+
+    }
+
+    .fa-2x {
+        font-size: 1em;
+    }
+}
